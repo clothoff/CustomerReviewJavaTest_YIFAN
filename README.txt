@@ -15,13 +15,13 @@ Modified files(modified areas are marked with comment "============ MODIFIED BY 
 
 Comments:
 
-	getNumberOfReviewsWithinRange:
-		My idea right here is just to utilize the existing "getNumberOfReviews" function. 
-		I change it by simply adding a "BETWEEN" condition in the Flexible Search query to return the numbers of review with ratings within the given range.
+getNumberOfReviewsWithinRange:
+My idea right here is just to utilize the existing "getNumberOfReviews" function. 
+I change it by simply adding a "BETWEEN" condition in the Flexible Search query to return the numbers of review with ratings within the given range.
 
-	Additional Checks before Creating Reviews:
-		Since there are two different checks before creating a review, so I created two exception classes for each.
-		By declaring a list of string of curse words in customerreview-spring.xml file, I inject the collection value by setter method in Spring framework. And I check if the comment contains any of these curse words.
+Additional Checks before Creating Reviews:
+Since there are two different checks before creating a review, so I created two exception classes for each.
+By declaring a list of string of curse words in customerreview-spring.xml file, I inject the collection value by setter method in Spring framework. And I check if the comment contains any of these curse words.
 
 
 
